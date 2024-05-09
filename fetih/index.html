@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto flex justify-between">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav>
+        <ul class="flex gap-4">
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#skills" class="hover:underline">Skills</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto my-10">
+    <section id="about">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <p>I am someone who is passionated in in working and learning computer programing with figma designing skill.</p>
+    </section>
+
+    <section id="skills">
+      <h2 class="text-2xl font-bold mb-4">Skills</h2>
+      <ul class="grid grid-cols-3 gap-4">
+        <li class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200"><span class="font-bold">HTML</span></li>
+        <li class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200"><span class="font-bold">CSS</span></li>
+        <li class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200"><span class="font-bold">JavaScript</span></li>
+        <li class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200"><span class="font-bold">Figma design</span></li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 class="text-2xl font-bold mb-4">Projects</h2>
+      <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <li class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200">
+          <h3 class="text-lg font-bold mb-2">Project 1</h3>
+          <p>Description of project 1</p>
+          <a href="#" class="text-blue-500 hover:underline">View Project</a>
+        </li>
+        <li class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200">
+          <h3 class="text-lg font-bold mb-2">Project 2</h3>
+          <p>Description of project 2</p>
+          <a href="#" class="text-blue-500 hover:underline">View Project</a>
+        </li>
+        <li class="bg-gray-100 p-4 rounded-lg shadow hover:bg-gray-200">
+          <h3 class="text-lg font-bold mb-2">Project 3</h3>
+          <p>Description of project 3</p>
+          <a href="#" class="text-blue-500 hover:underline">View Project</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+      <form>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="block mb-2">Name:</label>
+            <input type="text" id="name" class="bg-gray-100 p-2 rounded-lg shadow w-full">
+          </div>
+          <div>
+            <label for="email" class="block mb-2">email:</label>
+            <input type="email" id="email" class="bg-gray-100 p-2 rounded-lg shadow w-full">
+          </div>
+          <div class="col-span-2">
+            <label for="message" class="block mb-2">Message:</label>
+            <textarea id="message" class="bg-gray-100 p-2 rounded-lg shadow w-full h-24"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mt-4">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto">
+      <p class="text-center">Copyright &copy; 2023 My Portfolio</p>
+    </div>
+  </footer>
+
+</body>
+</html>
